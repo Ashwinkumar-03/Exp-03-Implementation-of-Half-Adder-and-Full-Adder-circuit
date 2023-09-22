@@ -44,6 +44,15 @@ RegisterNumber:212222240013
 Logic symbol & Truthtable
 RTL realization
 
+## fulladder
+```
+module FullAdder(A,B,Cin,sum,carry);
+input A,B,Cin;
+output sum,carry;
+assign sum= A^B^Cin;
+assign carry = (A&B)|((A^B)&Cin);
+endmodule
+```
 ## halfadder
 ```
 module HalfAdder(A,B,sum,carry);
@@ -54,27 +63,22 @@ assign carry = A&B;
 endmodule
 
 ```
-## fulladder
-```
-module FullAdder(A,B,Cin,sum,carry);
-input A,B,Cin;
-output sum,carry;
-assign sum= A^B^Cin;
-assign carry = (A&B)|((A^B)&Cin);
-endmodule
-```
+
 
 ### Output:
 ### RTL:
-![op](rtl%20halfadd.png)
-![op](rtl%20fullharder.png)
+![rtl fullharder](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/a7b6bcca-a21f-40dc-8594-4faf8b849871)
+![rtl halfadd](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/7e344d49-ef64-4c65-a173-146882d3b620)
+
 ### TIMING DIAGRAM:
-![op](waveform%20halfadder.png)
-![op](waveform%20fulladder.png)
+![waveform fulladder](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/00281213-0d71-4230-8eb7-802c9994326d)
+![waveform halfadder](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/9544d09d-9d0c-4a2c-9e62-7f95dd772953)
+
 
 ### TRUTH TABLE 
-![op](HALF%20TT.png)
-![op](FULL%20TT.png)
+![FULL TT](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/39cb5881-3315-4aaa-8a9e-6daa1ad01005)
+![HALF TT](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/a0ffb535-d9e6-4fb1-a110-92d2d56c62b1)
+
 
 ### Result:
 Thus, a half adder and full adder circuit is designed to verify its truth table in Quartus using Verilog programming.
