@@ -31,19 +31,17 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 
 ### Procedure
 
-Connect the supply (+5V) to the circuit
-Switch ON the main switch
-If the output is 1, then the led glows.
+Connect the supply (+5V) to the circuit Switch ON the main switch If the output is 1, then the led glows.
+
 ### 
 Program:
 /*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+
 Developed by: Ashwin Kumar.S
+
 RegisterNumber:212222240013
 */
-Logic symbol & Truthtable
-RTL realization
-
 ## fulladder
 ```
 module FullAdder(A,B,Cin,sum,carry);
@@ -67,16 +65,34 @@ endmodule
 
 ### Output:
 ### RTL:
+
+## fulladder
+
 ![rtl fullharder](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/a7b6bcca-a21f-40dc-8594-4faf8b849871)
+
+## halfadder
+
 ![rtl halfadd](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/7e344d49-ef64-4c65-a173-146882d3b620)
 
 ### TIMING DIAGRAM:
+
+## fulladder
+
 ![waveform fulladder](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/00281213-0d71-4230-8eb7-802c9994326d)
+
+## halfadder
+
 ![waveform halfadder](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/9544d09d-9d0c-4a2c-9e62-7f95dd772953)
 
 
 ### TRUTH TABLE 
+
+## fulladder
+
 ![FULL TT](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/39cb5881-3315-4aaa-8a9e-6daa1ad01005)
+
+## halfadder
+
 ![HALF TT](https://github.com/Ashwinkumar-03/Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/118663725/a0ffb535-d9e6-4fb1-a110-92d2d56c62b1)
 
 
